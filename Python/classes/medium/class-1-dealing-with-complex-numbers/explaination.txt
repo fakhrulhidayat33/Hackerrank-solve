@@ -1,0 +1,3 @@
+link:
+https://hackerrank-challenge-pdfs.s3.amazonaws.com/1653-class-1-dealing-with-complex-numbers-English?response-content-disposition=inline%3B%20filename%3Dclass-1-dealing-with-complex-numbers-English.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR6O7GJNX5DNFO3PV%2F20250519%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250519T122113Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=2fce53263eaa84a68e6e257a40cec26d08382958213f9bd5fcb19f2384d37cda
+there is no spesial here; it's only basic math
