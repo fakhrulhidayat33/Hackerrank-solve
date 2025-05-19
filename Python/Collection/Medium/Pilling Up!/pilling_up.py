@@ -5,17 +5,15 @@ for i in range(T):
     n = int(input())
     sideLength = list(map(int,input().strip().split()))
     code = False
-    a = sideLength[0]
-    b = sideLength[1]
+    prev = sideLength[0]
+    curr = sideLength[1]
     t = 2
     while t < n:
-        c = sideLength[t]
-        #print(f"a, b, c = {a}, {b}, {c}")
-        if a < b and b > c:
-            #print('masuk')
+        next = sideLength[t]
+        if prev < curr and curr > next:
             code = True
             break
         t += 1
-        a = b
-        b = c
+        prev = curr
+        curr = next
     print("No") if code else print("Yes")
