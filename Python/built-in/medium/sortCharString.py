@@ -4,10 +4,7 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 List = list(map(ord, list(input())))
 
-w = []
-W = []
-N1 = []
-N2 = []
+w = W = N1 = N2 = []
 for i in List:
     if i in range(49, 58, 2): N1.append(i)
     elif i in range(48, 57, 2): N2.append(i)
