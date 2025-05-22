@@ -1,15 +1,14 @@
 # Link: https://www.hackerrank.com/challenges/map-and-lambda-expression/problem?isFullScreen=true
-# I start edit from here
+# I start editing from here
 cube = lambda x: x**3
 
 def fibonacci(n):
     # return a list of fibonacci numbers
     a = 0; b = 1
-    data = [a, b]
-    for i in range(n-2):
-        c = a + b
-        data.append(c)
-        a = b; b = c;
+    data = []
+    for i in range(n):
+        data.append(a)
+        c = a + b; a = b; b = c;
     return data
 # until here        
 if __name__ == '__main__':
