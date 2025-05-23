@@ -2,7 +2,7 @@
 import re
 def fun(s):
     # I only edit here
-    return re.search("^[_a-z\d-]+@[a-z]+\.[a-z]+$",s)
+    return re.search("^[_a-z\d-]+@[a-z\d]+\.[a-z]+$",s)
     # until here
 
 def filter_mail(emails):
