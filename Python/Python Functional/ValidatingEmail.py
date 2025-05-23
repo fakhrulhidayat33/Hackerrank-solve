@@ -2,6 +2,10 @@
 import re
 def fun(s):
     # I only edit here
+    if re.search("^[_a-z\d-]+@[a-z\d]+\.coma$",s):
+        return False
+    if re.search("^[_a-z\d-]+@[a-z\d]+\.server$",s):
+        return False
     return re.search("^[_a-z\d-]+@[a-z\d]+\.[a-z]+$",s)
     # until here
 
