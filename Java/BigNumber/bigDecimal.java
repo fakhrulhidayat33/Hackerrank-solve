@@ -15,22 +15,14 @@ class Solution{
       	sc.close();
         
         // I edit from here
-        double a,b;
-        String tes;
-        
-        for (int i = 0; i <n-1; i++){
-            a = new BigDecimal(s[0]).doubleValue();
-            for (int j = 1; j < n-i; j++){
-                b = new BigDecimal(s[j]).doubleValue();
-                if (a<b){
-                    tes = s[j];
-                    s[j] = s[j-1];
-                    s[j-1] = tes;
-                }else if (a>b){
-                    a = b;
-                }
+        Arrays.sort(s, 0, n, new Comparator<String>() {
+            public int compare(String a, String b) {
+                // Convert to BigDecimal and compare in descending order
+                BigDecimal A = new BigDecimal(a);
+                BigDecimal B = new BigDecimal(b);
+                return B.compareTo(A); // descending
             }
-        }
+        });
         // until here
         //Output
         for(int i=0;i<n;i++)
